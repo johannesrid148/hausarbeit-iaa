@@ -8,7 +8,8 @@ import de.nordakademie.common.Person;
 public class PersonSerializer {
 
   public static void main(final String[] args) {
-    final Person person = new Person("Bene");
+    final Person person = new Person();
+    person.setName("Bene");
 
     try (final ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("person"))) {
       out.writeObject(person);

@@ -1,5 +1,6 @@
 /.idea/
 /target/
 /db.trace.db
+/db.lock.db
 /persistenceExample.iml
 /person

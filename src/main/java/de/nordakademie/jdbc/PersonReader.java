@@ -5,13 +5,17 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import de.nordakademie.common.Person;
+
 public class PersonReader {
 
   public static void main(final String[] args) {
     try (final Connection connection = getConnection()) {
       final ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM PERSON");
       while (resultSet.next()) {
-        System.out.println(resultSet.getString(1));
+        final Person person = new Person();
+        person.setName(resultSet.getString(1));
+        System.out.println(person.getName());
       }
     } catch (final SQLException sqlException) {
       sqlException.printStackTrace();
