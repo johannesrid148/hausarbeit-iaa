@@ -3,6 +3,9 @@
   <persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>de.nordakademie.common.Person</class>
+    <class>de.nordakademie.common.Room</class>
+    <class>de.nordakademie.common.Course</class>
+    <class>de.nordakademie.common.Lecture</class>
     <properties>
       <property name="hibernate.connection.url" value="jdbc:h2:~/dev/nordakademie/persistenceExample/db;MV_STORE=FALSE;MVCC=FALSE"/>
       <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
