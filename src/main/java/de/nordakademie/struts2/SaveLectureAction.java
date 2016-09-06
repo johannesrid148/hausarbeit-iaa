@@ -11,6 +11,8 @@ import de.nordakademie.hibernate.LectureDAO;
 
 public class SaveLectureAction extends ActionSupport {
 
+  private Room room;
+
   public String saveLecture() {
 
     final Course course = new Course();
@@ -21,7 +23,7 @@ public class SaveLectureAction extends ActionSupport {
 
     final Room room = new Room();
     room.setBuilding("C");
-    room.setRoomNumber(110);
+    room.setRoomNumber(this.room.getRoomNumber());
     room.setSeats(30);
     room.setPresenterAvailable(true);
 
@@ -34,5 +36,13 @@ public class SaveLectureAction extends ActionSupport {
     LectureDAO.create(lecture);
 
     return SUCCESS;
+  }
+
+  public Room getRoom() {
+    return room;
+  }
+
+  public void setRoom(final Room room) {
+    this.room = room;
   }
 }
