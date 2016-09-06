@@ -3,4 +3,5 @@
   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
   <definition name="roomForm" template="/roomForm.jsp"/>
+  <definition name="lecturesList" template="/lecturesList.jsp"/>
 </tiles-definitions>

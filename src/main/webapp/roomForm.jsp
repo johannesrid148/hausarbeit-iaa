@@ -7,6 +7,7 @@
 <body>
 <h2>Save a Room</h2>
 <s:form>
+  <s:textfield name="course.number" requiredLabel="true"/>
   <s:textfield name="room.roomNumber" requiredLabel="true"/>
   <s:submit action="saveLecture"/>
 </s:form>

@@ -10,5 +10,9 @@
       <result name="input" type="tiles">roomForm</result>
       <result type="tiles">roomForm</result>
     </action>
+    <action name="allLectures" class="de.nordakademie.struts2.LoadLectureAction" method="loadLectures">
+      <result name="input" type="tiles">roomForm</result>
+      <result type="tiles">lecturesList</result>
+    </action>
   </package>
 </struts>

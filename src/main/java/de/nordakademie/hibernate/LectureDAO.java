@@ -1,5 +1,7 @@
 package de.nordakademie.hibernate;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 
 import de.nordakademie.common.Lecture;
@@ -17,5 +19,18 @@ public class LectureDAO {
 
     entityManager.getTransaction().commit();
     entityManager.close();
+  }
+
+  public static List<Lecture> findAll() {
+    final EntityManager entityManager = HibernateUtil.getEntityManagerFactory().createEntityManager();
+
+    entityManager.getTransaction().begin();
+
+    final List<Lecture> resultList = entityManager.createQuery("from Lecture").getResultList();
+
+    entityManager.getTransaction().commit();
+    entityManager.close();
+
+    return resultList;
   }
 }
