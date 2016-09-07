@@ -21,16 +21,18 @@ public class LectureDAO {
     entityManager.close();
   }
 
-  public static List<Lecture> findAll() {
+  public static List<Lecture> findAll(final int roomNumber) {
     final EntityManager entityManager = HibernateUtil.getEntityManagerFactory().createEntityManager();
 
     entityManager.getTransaction().begin();
 
-    final List<Lecture> resultList = entityManager.createQuery("from Lecture").getResultList();
+    final List<Lecture> lectures = entityManager.createQuery("from Lecture where room.roomNumber < :roomNumber")
+      .setParameter("roomNumber", roomNumber)
+      .getResultList();
 
     entityManager.getTransaction().commit();
     entityManager.close();
 
-    return resultList;
+    return lectures;
   }
 }
