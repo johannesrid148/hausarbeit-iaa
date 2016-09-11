@@ -8,8 +8,7 @@
   </div>
   <div class="form-group">
     <label for="room.number"><s:text name="room.number"/></label>
-    <s:textfield name="room.number" id="room.number" requiredLabel="true" type="number" class="form-control"
-                 placeholder="001"/>
+    <s:textfield name="room.number" id="room.number" requiredLabel="true" type="number" class="form-control" placeholder="001"/>
   </div>
   <div class="form-group">
     <label for="room.seats"><s:text name="room.seats"/></label>
@@ -21,5 +20,5 @@
       <s:text name="room.presenterAvailable"/>
     </label>
   </div>
-  <s:submit action="saveRoom" class="btn btn-primary"><s:text name="button.addRoom"/></s:submit>
+  <s:submit action="saveRoom" key="button.addRoom" class="btn btn-primary"/>
 </s:form>
