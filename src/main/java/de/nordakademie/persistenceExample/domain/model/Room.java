@@ -23,8 +23,7 @@ public class Room {
   @NaturalId
   private String building;
   @NaturalId
-  @Column(name = "room_number")
-  private int roomNumber;
+  private int number;
   @Basic
   private int seats;
   @Basic

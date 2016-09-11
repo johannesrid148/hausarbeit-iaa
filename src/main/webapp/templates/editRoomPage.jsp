@@ -7,8 +7,8 @@
     <s:textfield name="room.building" id="room.building" requiredLabel="true" class="form-control" placeholder="A"/>
   </div>
   <div class="form-group">
-    <label for="room.roomNumber"><s:text name="room.roomNumber"/></label>
-    <s:textfield name="room.roomNumber" id="room.roomNumber" requiredLabel="true" type="number" class="form-control"
+    <label for="room.number"><s:text name="room.number"/></label>
+    <s:textfield name="room.number" id="room.number" requiredLabel="true" type="number" class="form-control"
                  placeholder="001"/>
   </div>
   <div class="form-group">
