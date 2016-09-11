@@ -3,16 +3,18 @@
   "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
   <package name="default" extends="tiles-default">
-    <action name="addRoom">
-      <result type="tiles">roomForm</result>
+    <result-types>
+      <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+    </result-types>
+    <action name="editRoomPage">
+      <result type="tiles">editRoomPage</result>
     </action>
-    <action name="saveLecture" class="de.nordakademie.struts2.SaveLectureAction" method="saveLecture">
-      <result type="tiles">roomForm</result>
-      <result name="input" type="tiles">roomForm</result>
+    <action name="saveRoom" class="de.nordakademie.persistenceExample.web.EditRoomAction" method="saveRoom">
+      <result type="tiles">editRoomPage</result>
+      <result name="input" type="tiles">editRoomPage</result>
     </action>
-    <action name="allLectures" class="de.nordakademie.struts2.LoadLectureAction" method="loadLectures">
-      <result type="tiles">lecturesList</result>
-      <result name="input" type="tiles">lecturesList</result>
+    <action name="listRoomsPage" class="de.nordakademie.persistenceExample.web.ListRoomAction" method="listAll">
+      <result type="tiles">listRoomsPage</result>
     </action>
   </package>
 </struts>
