@@ -11,9 +11,9 @@ import lombok.Getter;
 import de.nordakademie.persistenceExample.domain.model.Room;
 import de.nordakademie.persistenceExample.service.RoomService;
 
-@Getter
 public class ListRoomAction extends ActionSupport {
 
+  @Getter
   private List<Room> rooms;
   private final RoomService roomService;
 

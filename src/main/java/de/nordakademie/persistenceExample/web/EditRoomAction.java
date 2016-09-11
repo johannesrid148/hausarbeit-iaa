@@ -10,10 +10,10 @@ import lombok.Setter;
 import de.nordakademie.persistenceExample.domain.model.Room;
 import de.nordakademie.persistenceExample.service.RoomService;
 
-@Getter
-@Setter
 public class EditRoomAction extends ActionSupport {
 
+  @Getter
+  @Setter
   private Room room;
   private final RoomService roomService;
 
