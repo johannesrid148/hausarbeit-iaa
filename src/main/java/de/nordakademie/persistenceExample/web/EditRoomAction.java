@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import lombok.Getter;
 import lombok.Setter;
 
-import de.nordakademie.persistenceExample.domain.model.Room;
+import de.nordakademie.persistenceExample.domain.Room;
 import de.nordakademie.persistenceExample.service.RoomService;
 
 public class EditRoomAction extends ActionSupport {

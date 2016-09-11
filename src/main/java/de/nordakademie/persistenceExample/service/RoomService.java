@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import de.nordakademie.persistenceExample.domain.RoomRepository;
-import de.nordakademie.persistenceExample.domain.model.Room;
+import de.nordakademie.persistenceExample.domain.Room;
 
 @Service
 public class RoomService {

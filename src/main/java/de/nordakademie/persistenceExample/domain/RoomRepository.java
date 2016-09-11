@@ -7,8 +7,6 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import de.nordakademie.persistenceExample.domain.model.Room;
-
 @Repository
 public class RoomRepository {
 

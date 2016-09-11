@@ -8,7 +8,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import lombok.Getter;
 
-import de.nordakademie.persistenceExample.domain.model.Room;
+import de.nordakademie.persistenceExample.domain.Room;
 import de.nordakademie.persistenceExample.service.RoomService;
 
 public class ListRoomAction extends ActionSupport {
