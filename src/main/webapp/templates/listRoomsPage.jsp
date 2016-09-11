@@ -1,12 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="/struts-tags" prefix="s" %>
+<h2><s:text name="header.listRooms"/></h2>
 <table class="table table-hover">
   <tr>
     <th>#</th>
-    <th>Building</th>
-    <th>RoomNumber</th>
-    <th>Seats</th>
-    <th>PresenterAvailable</th>
+    <th><s:text name="room.building"/></th>
+    <th><s:text name="room.roomNumber"/></th>
+    <th><s:text name="room.seats"/></th>
+    <th><s:text name="room.presenterAvailable"/></th>
   </tr>
   <s:iterator value="rooms">
     <tr>
