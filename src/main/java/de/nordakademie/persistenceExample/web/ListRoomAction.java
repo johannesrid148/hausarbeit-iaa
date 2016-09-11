@@ -7,13 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.opensymphony.xwork2.ActionSupport;
 
 import lombok.Getter;
-import lombok.Setter;
 
 import de.nordakademie.persistenceExample.domain.model.Room;
 import de.nordakademie.persistenceExample.service.RoomService;
 
 @Getter
-@Setter
 public class ListRoomAction extends ActionSupport {
 
   private List<Room> rooms;
