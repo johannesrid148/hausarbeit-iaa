@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><tiles:insertAttribute name="title"/></title>
-  <link href="/persistence-example/static/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/iaa-lecture/static/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
@@ -16,7 +16,7 @@
   <hr/>
   <tiles:insertAttribute name="content"/>
 </div>
-<script type="application/javascript" src="/persistence-example/static/js/jquery-3.1.0.min.js"></script>
-<script type="application/javascript" src="/persistence-example/static/js/bootstrap.js"></script>
+<script type="application/javascript" src="/iaa-lecture/static/js/jquery-3.1.0.min.js"></script>
+<script type="application/javascript" src="/iaa-lecture/static/js/bootstrap.js"></script>
 </body>
 </html>

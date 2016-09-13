@@ -1,4 +1,4 @@
-# persistence-example
+# iaa-lecture
 
 > "Make it happen." - Benedikt Stemmildt
 
