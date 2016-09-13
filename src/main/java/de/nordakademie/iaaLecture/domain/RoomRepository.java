@@ -1,4 +1,4 @@
-package de.nordakademie.persistenceExample.domain;
+package de.nordakademie.iaaLecture.domain;
 
 import java.util.List;
 

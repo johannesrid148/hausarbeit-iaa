@@ -1,4 +1,4 @@
-package de.nordakademie.persistenceExample.domain;
+package de.nordakademie.iaaLecture.domain;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
