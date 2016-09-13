@@ -1,4 +1,4 @@
-package de.nordakademie.iaaLecture.service;
+package de.nak.iaaLecture.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import de.nordakademie.iaaLecture.domain.RoomRepository;
-import de.nordakademie.iaaLecture.domain.Room;
+import de.nak.iaaLecture.domain.RoomRepository;
+import de.nak.iaaLecture.domain.Room;
 
 @Service
 public class RoomService {

@@ -9,11 +9,11 @@
     <action name="editRoomPage">
       <result type="tiles">editRoomPage</result>
     </action>
-    <action name="saveRoom" class="de.nordakademie.iaaLecture.web.EditRoomAction" method="saveRoom">
+    <action name="saveRoom" class="de.nak.iaaLecture.web.EditRoomAction" method="saveRoom">
       <result type="tiles">editRoomPage</result>
       <result name="input" type="tiles">editRoomPage</result>
     </action>
-    <action name="listRoomsPage" class="de.nordakademie.iaaLecture.web.ListRoomAction" method="listAll">
+    <action name="listRoomsPage" class="de.nak.iaaLecture.web.ListRoomAction" method="listAll">
       <result type="tiles">listRoomsPage</result>
     </action>
   </package>

@@ -1,4 +1,4 @@
-package de.nordakademie.iaaLecture.domain;
+package de.nak.iaaLecture.domain;
 
 import java.util.List;
 

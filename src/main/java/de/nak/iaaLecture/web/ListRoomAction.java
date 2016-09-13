@@ -1,4 +1,4 @@
-package de.nordakademie.iaaLecture.web;
+package de.nak.iaaLecture.web;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import lombok.Getter;
 
-import de.nordakademie.iaaLecture.domain.Room;
-import de.nordakademie.iaaLecture.service.RoomService;
+import de.nak.iaaLecture.domain.Room;
+import de.nak.iaaLecture.service.RoomService;
 
 public class ListRoomAction extends ActionSupport {
 

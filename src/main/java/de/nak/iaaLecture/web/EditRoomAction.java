@@ -1,4 +1,4 @@
-package de.nordakademie.iaaLecture.web;
+package de.nak.iaaLecture.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -7,8 +7,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import lombok.Getter;
 import lombok.Setter;
 
-import de.nordakademie.iaaLecture.domain.Room;
-import de.nordakademie.iaaLecture.service.RoomService;
+import de.nak.iaaLecture.service.RoomService;
+import de.nak.iaaLecture.domain.Room;
 
 public class EditRoomAction extends ActionSupport {
 
