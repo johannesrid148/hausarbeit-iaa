@@ -9,21 +9,21 @@ import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class RoomRepository {
+public class CourseRepository {
 
   @PersistenceContext
   private EntityManager entityManager;
 
-  public void createRoom(final Room room) {
-    entityManager.persist(room);
+  public void createCourse(final Course course) {
+    entityManager.persist(course);
   }
 
-  public List<Room> findAll() {
-    return entityManager.createQuery("SELECT room FROM Room room", Room.class).getResultList();
+  public List<Course> findAll() {
+    return entityManager.createQuery("SELECT course FROM Course course", Course.class).getResultList();
   }
 
-  public Room find(final String roomNaturalId) {
+  public Course find(final String courseNaturalId) {
     final Session session = entityManager.unwrap(Session.class);
-    return session.bySimpleNaturalId(Room.class).load(roomNaturalId);
+    return session.bySimpleNaturalId(Course.class).load(courseNaturalId);
   }
 }

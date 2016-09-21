@@ -16,5 +16,27 @@
     <action name="listRoomsPage" class="de.nak.iaaLecture.web.ListRoomAction" method="listAll">
       <result type="tiles">listRoomsPage</result>
     </action>
+
+    <action name="editCoursePage">
+      <result type="tiles">editCoursePage</result>
+    </action>
+    <action name="saveCourse" class="de.nak.iaaLecture.web.EditCourseAction" method="saveCourse">
+      <result type="tiles">editCoursePage</result>
+      <result name="input" type="tiles">editCoursePage</result>
+    </action>
+    <action name="listCoursesPage" class="de.nak.iaaLecture.web.ListCourseAction" method="listAll">
+      <result type="tiles">listCoursesPage</result>
+    </action>
+
+    <action name="editLecturePage">
+      <result type="tiles">editLecturePage</result>
+    </action>
+    <action name="saveLecture" class="de.nak.iaaLecture.web.EditLectureAction" method="saveLecture">
+      <result type="tiles">editLecturePage</result>
+      <result name="input" type="tiles">editLecturePage</result>
+    </action>
+    <action name="listLecturesPage" class="de.nak.iaaLecture.web.ListLectureAction" method="listAll">
+      <result type="tiles">listLecturesPage</result>
+    </action>
   </package>
 </struts>
