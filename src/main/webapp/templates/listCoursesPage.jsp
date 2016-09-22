@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="/struts-tags" prefix="s" %>
-<h2><s:text name="header.listRooms"/></h2>
+<h2><s:text name="header.listCourses"/></h2>
 <table class="table table-hover">
   <tr>
     <th>#</th>
