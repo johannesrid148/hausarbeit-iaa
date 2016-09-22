@@ -5,7 +5,6 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -23,7 +22,9 @@ public class RoomRepository {
   }
 
   public Room find(final String roomNaturalId) {
-    final Session session = entityManager.unwrap(Session.class);
-    return session.bySimpleNaturalId(Room.class).load(roomNaturalId);
+    return entityManager.createQuery(
+      "SELECT room FROM Room room WHERE CONCAT(room.building, room.number) = :roomNaturalId", Room.class)
+      .setParameter("roomNaturalId", roomNaturalId)
+      .getSingleResult();
   }
 }

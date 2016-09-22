@@ -23,7 +23,7 @@ public class Room {
   @NaturalId
   private String building;
   @NaturalId
-  private int number;
+  private String number;
   @Basic
   private int seats;
   @Basic

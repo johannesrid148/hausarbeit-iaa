@@ -5,7 +5,6 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -23,7 +22,9 @@ public class CourseRepository {
   }
 
   public Course find(final String courseNaturalId) {
-    final Session session = entityManager.unwrap(Session.class);
-    return session.bySimpleNaturalId(Course.class).load(courseNaturalId);
+    return entityManager.createQuery(
+      "SELECT course FROM Course course WHERE CONCAT(course.fieldOfStudy, course.number) = :courseNaturalId", Course.class)
+      .setParameter("courseNaturalId", courseNaturalId)
+      .getSingleResult();
   }
 }
