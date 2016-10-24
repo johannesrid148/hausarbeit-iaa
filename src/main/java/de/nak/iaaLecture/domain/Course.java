@@ -24,7 +24,7 @@ public class Course {
   @Column(name = "field_of_study")
   private String fieldOfStudy;
   @NaturalId
-  private int number;
+  private String number;
   @Basic
   private String lecturer;
   @Basic

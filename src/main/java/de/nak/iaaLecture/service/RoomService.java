@@ -28,4 +28,8 @@ public class RoomService {
   public List<Room> listAll() {
     return roomRepository.findAll();
   }
+
+  public Room find(final String roomNaturalId) {
+    return roomRepository.find(roomNaturalId);
+  }
 }
