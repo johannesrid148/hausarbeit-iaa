@@ -2,42 +2,12 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
   "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
-  <constant name="struts.action.excludePattern" value="/api/.*"/>
-  <package name="default" extends="tiles-default">
-    <result-types>
-      <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
-    </result-types>
-    <action name="editRoomPage">
-      <result type="tiles">editRoomPage</result>
+  <package name="default" extends="struts-default">
+    <action name="start">
+      <result>templates/index.jsp</result>
     </action>
-    <action name="saveRoom" class="de.nak.iaaLecture.web.EditRoomAction" method="saveRoom">
-      <result type="tiles">editRoomPage</result>
-      <result name="input" type="tiles">editRoomPage</result>
-    </action>
-    <action name="listRoomsPage" class="de.nak.iaaLecture.web.ListRoomAction" method="listAll">
-      <result type="tiles">listRoomsPage</result>
-    </action>
-
-    <action name="editCoursePage">
-      <result type="tiles">editCoursePage</result>
-    </action>
-    <action name="saveCourse" class="de.nak.iaaLecture.web.EditCourseAction" method="saveCourse">
-      <result type="tiles">editCoursePage</result>
-      <result name="input" type="tiles">editCoursePage</result>
-    </action>
-    <action name="listCoursesPage" class="de.nak.iaaLecture.web.ListCourseAction" method="listAll">
-      <result type="tiles">listCoursesPage</result>
-    </action>
-
-    <action name="editLecturePage">
-      <result type="tiles">editLecturePage</result>
-    </action>
-    <action name="saveLecture" class="de.nak.iaaLecture.web.EditLectureAction" method="saveLecture">
-      <result type="tiles">editLecturePage</result>
-      <result name="input" type="tiles">editLecturePage</result>
-    </action>
-    <action name="listLecturesPage" class="de.nak.iaaLecture.web.ListLectureAction" method="listAll">
-      <result type="tiles">listLecturesPage</result>
+    <action name="helloWorld" class="de.nordakademie.iaa.helloworld.HelloWorldAction">
+      <result>templates/helloWorld.jsp</result>
     </action>
   </package>
 </struts>
