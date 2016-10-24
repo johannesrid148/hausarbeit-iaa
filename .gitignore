@@ -1,9 +1,5 @@
 /.idea/
 /target/
-/db.h2.db
-/db.trace.db
-/db.lock.db
 /iaa-lecture.iml
-/person
 
 rebel.xml
