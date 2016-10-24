@@ -3,6 +3,7 @@ package de.nordakademie.iaa.helloworld;
 import com.opensymphony.xwork2.Action;
 
 public class HelloWorldAction implements Action {
+
   private String name;
   private String greeting;
 
