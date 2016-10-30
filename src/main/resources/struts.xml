@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
-  "http://struts.apache.org/dtds/struts-2.5.dtd">
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE struts PUBLIC '-//Apache Software Foundation//DTD Struts Configuration 2.5//EN'
+  'http://struts.apache.org/dtds/struts-2.5.dtd'>
 <struts>
-  <package name="default" extends="struts-default">
-    <action name="start">
+  <package name='default' extends='struts-default'>
+    <action name='start'>
       <result>templates/index.jsp</result>
     </action>
-    <action name="helloWorld" class="de.nordakademie.iaa.helloworld.HelloWorldAction">
+    <action name='helloWorld' class='de.nordakademie.iaa.helloworld.HelloWorldAction'>
       <result>templates/helloWorld.jsp</result>
     </action>
   </package>
