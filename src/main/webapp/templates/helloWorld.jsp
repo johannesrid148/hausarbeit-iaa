@@ -5,7 +5,7 @@
   <title>Struts Hello World</title>
 </head>
 <body>
-<h1>Struts Hello World</h1>
+<h1><s:text name="exampleKey"/></h1>
 <h2><s:property value="greeting"/></h2>
 </body>
 </html>

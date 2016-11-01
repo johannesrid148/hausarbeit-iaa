@@ -2,7 +2,18 @@
 <!DOCTYPE struts PUBLIC '-//Apache Software Foundation//DTD Struts Configuration 2.5//EN'
   'http://struts.apache.org/dtds/struts-2.5.dtd'>
 <struts>
-  <package name='default' extends='struts-default'>
+  <package name='default' extends="struts-default">
+
+    <interceptors>
+      <interceptor name="timer" class="de.nordakademie.iaa.helloworld.HelloWorldInterceptor"/>
+      <interceptor-stack name="timed-struts-default">
+        <interceptor-ref name="timer"/>
+        <interceptor-ref name="defaultStack"/>
+      </interceptor-stack>
+    </interceptors>
+
+    <default-interceptor-ref name="timed-struts-default"/>
+
     <action name='start'>
       <result>templates/index.jsp</result>
     </action>
