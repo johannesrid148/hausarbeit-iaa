@@ -2,8 +2,16 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-  <definition name="mainTemplate" template="">
+  <definition name="pageFrame" template="/templates/layout/pageFrame.jsp">
     <put-attribute name="title" value="Room Management"/>
-    <put-attribute name="header" value=""/>
+    <put-attribute name="header" value="/templates/layout/header.jsp"/>
+  </definition>
+
+  <definition name="helloWorld" extends="pageFrame">
+    <put-attribute name="content" value="/templates/helloWorld.jsp"/>
+  </definition>
+
+  <definition name="index" extends="pageFrame">
+    <put-attribute name="content" value="/templates/index.jsp"/>
   </definition>
 </tiles-definitions>
