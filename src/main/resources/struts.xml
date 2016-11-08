@@ -10,21 +10,8 @@
                    default="true"/>
     </result-types>
 
-    <interceptors>
-      <interceptor name="timer" class="de.nordakademie.iaa.helloworld.HelloWorldInterceptor"/>
-      <interceptor-stack name="timed-struts-default">
-        <interceptor-ref name="timer"/>
-        <interceptor-ref name="defaultStack"/>
-      </interceptor-stack>
-    </interceptors>
-
-    <default-interceptor-ref name="timed-struts-default"/>
-
-    <action name='start'>
-      <result>index</result>
-    </action>
-    <action name='helloWorld' class='de.nordakademie.iaa.helloworld.HelloWorldAction'>
-      <result>helloWorld</result>
+    <action name='roomList' class="de.nordakademie.iaa.ui.RoomListAction">
+      <result>roomList</result>
     </action>
   </package>
 </struts>
