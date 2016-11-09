@@ -8,18 +8,18 @@ import de.nordakademie.iaa.model.Room;
 import de.nordakademie.iaa.service.RoomService;
 import de.nordakademie.iaa.service.RoomServiceImpl;
 
-public class RoomListAction implements Action {
+public class ListRoomsAction implements Action {
 
   private final RoomService roomService = new RoomServiceImpl();
   private List<Room> rooms;
-
-  public List<Room> getRooms() {
-    return rooms;
-  }
 
   @Override
   public String execute() throws Exception {
     rooms = roomService.findAll();
     return SUCCESS;
+  }
+
+  public List<Room> getRooms() {
+    return rooms;
   }
 }

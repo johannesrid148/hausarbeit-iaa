@@ -3,18 +3,8 @@
   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
   <definition name="pageFrame" template="/templates/layout/pageFrame.jsp">
-    <put-attribute name="title" value="Room Management"/>
     <put-attribute name="header" value="/templates/layout/header.jsp"/>
   </definition>
-
-  <definition name="helloWorld" extends="pageFrame">
-    <put-attribute name="content" value="/templates/helloWorld.jsp"/>
-  </definition>
-
-  <definition name="index" extends="pageFrame">
-    <put-attribute name="content" value="/templates/index.jsp"/>
-  </definition>
-
   <definition name="roomList" extends="pageFrame">
     <put-attribute name="content" value="/templates/roomList.jsp"/>
   </definition>

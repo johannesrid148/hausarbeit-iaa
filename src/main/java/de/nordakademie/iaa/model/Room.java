@@ -3,11 +3,11 @@ package de.nordakademie.iaa.model;
 public class Room {
 
   private String building;
-  private String roomNumber;
+  private String number;
 
-  public Room(final String building, final String roomNumber) {
+  public Room(final String building, final String number) {
     this.building = building;
-    this.roomNumber = roomNumber;
+    this.number = number;
   }
 
   public String getBuilding() {
@@ -18,11 +18,11 @@ public class Room {
     this.building = building;
   }
 
-  public String getRoomNumber() {
-    return roomNumber;
+  public String getNumber() {
+    return number;
   }
 
-  public void setRoomNumber(final String roomNumber) {
-    this.roomNumber = roomNumber;
+  public void setNumber(final String number) {
+    this.number = number;
   }
 }
