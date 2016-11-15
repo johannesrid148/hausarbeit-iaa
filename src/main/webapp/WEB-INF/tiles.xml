@@ -8,4 +8,7 @@
   <definition name="roomList" extends="pageFrame">
     <put-attribute name="content" value="/templates/roomList.jsp"/>
   </definition>
+  <definition name="roomEdit" extends="pageFrame">
+    <put-attribute name="content" value="/templates/roomEdit.jsp"/>
+  </definition>
 </tiles-definitions>

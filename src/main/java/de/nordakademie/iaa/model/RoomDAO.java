@@ -1,15 +1,18 @@
 package de.nordakademie.iaa.model;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RoomDAO {
 
-  private final List<Room> rooms = Arrays.asList(
-    new Room("B", "005"), new Room("B", "006"));
+  private final List<Room> rooms = new ArrayList<Room>() {{
+    add(new Room("B", "005"));
+    add(new Room("B", "006"));
+  }};;
 
-  public void create(final Room room) {
+  public boolean create(final Room room) {
     rooms.add(room);
+    return true;
   }
 
   public Room read(final int index) {

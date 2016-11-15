@@ -8,4 +8,5 @@ public interface RoomService {
 
   List<Room> findAll();
 
+  boolean saveRoom(Room room);
 }

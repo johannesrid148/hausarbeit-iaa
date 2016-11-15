@@ -9,5 +9,15 @@
     <action name='roomList' class="de.nordakademie.iaa.ui.ListRoomsAction">
       <result>roomList</result>
     </action>
+    <action name='roomEdit'
+            class="de.nordakademie.iaa.ui.EditRoomAction"
+            method="getForm">
+      <result>roomEdit</result>
+    </action>
+    <action name='saveRoom'
+            class="de.nordakademie.iaa.ui.EditRoomAction"
+            method="saveRoom">
+      <result type="redirectAction">roomList</result>
+    </action>
   </package>
 </struts>

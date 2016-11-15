@@ -4,13 +4,13 @@ import java.util.List;
 
 import com.opensymphony.xwork2.Action;
 
+import de.nordakademie.iaa.Context;
 import de.nordakademie.iaa.model.Room;
 import de.nordakademie.iaa.service.RoomService;
-import de.nordakademie.iaa.service.RoomServiceImpl;
 
 public class ListRoomsAction implements Action {
 
-  private final RoomService roomService = new RoomServiceImpl();
+  private final RoomService roomService = Context.roomService;
   private List<Room> rooms;
 
   @Override
