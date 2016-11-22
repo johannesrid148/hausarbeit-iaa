@@ -20,6 +20,11 @@ public class EditRoomAction extends ActionSupport {
     return SUCCESS;
   }
 
+  @Override
+  public void validate() {
+    // more complicated validations go here!
+  }
+
   public Room getRoom() {
     return room;
   }

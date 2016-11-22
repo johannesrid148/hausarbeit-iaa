@@ -18,6 +18,7 @@
             class="de.nordakademie.iaa.ui.EditRoomAction"
             method="saveRoom">
       <result type="redirectAction">roomList</result>
+      <result name="input">roomEdit</result>
     </action>
   </package>
 </struts>
