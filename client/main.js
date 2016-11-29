@@ -1,13 +1,13 @@
-const url =
+var url =
   'https://fintechtoolbox.com/bankcodes/50010517.json';
 
-const request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
 
-request.onload = () => {
+request.onload = function() {
   if (request.status === 200) {
     alert(request.responseText);
   }
 };
 
 request.open("GET", url, true);
-request.send(null);
+request.send();
