@@ -1,14 +1,16 @@
 package de.nordakademie.iaa.model;
 
+import static java.util.Collections.synchronizedList;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class RoomDAO {
 
-  private final List<Room> rooms = new ArrayList<Room>() {{
+  private final List<Room> rooms = synchronizedList(new ArrayList<Room>() {{
     add(new Room("B", "005"));
     add(new Room("B", "006"));
-  }};;
+  }});
 
   public boolean create(final Room room) {
     rooms.add(room);
