@@ -9,7 +9,7 @@ public class Room {
     // needed for struts
   }
 
-  public Room(final String building, final String number) {
+  Room(final String building, final String number) {
     this.building = building;
     this.number = number;
   }
