@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="roomManagement">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Management</title>
+  <script type="application/javascript" src="js/lib/angular.min.js"></script>
+  <script type="application/javascript" src="js/application.js"></script>
+  <script type="application/javascript" src="js/resource/roomResource.js"></script>
+  <script type="application/javascript" src="js/service/roomService.js"></script>
+  <script type="application/javascript" src="js/controller/roomListController.js"></script>
+</head>
+<body ng-controller="roomListController">
+<h1>Room Management</h1>
+<h2>Room List</h2>
+<input type="text" ng-model="roomSearchQuery">
+<table>
+  <tr>
+    <th>Building</th>
+    <th>Room Number</th>
+  </tr>
+  <tr ng-repeat="room in rooms | filter:roomSearchQuery">
+    <td>{{room.building}}</td>
+    <td>{{room.number}}</td>
+  </tr>
+</table>
+</body>
+</html>
