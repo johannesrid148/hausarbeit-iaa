@@ -1,8 +1,8 @@
 'use strict';
 
-application.controller('roomListController', ['$scope', 'roomService', function ($scope, roomService) {
+application.controller('roomListController', ['$scope', 'roomService', function($scope, roomService) {
   roomService.findAll()
-    .then(function (response) {
+    .then(function(response) {
       $scope.rooms = response.data;
     })
 }]);
