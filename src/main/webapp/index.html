@@ -8,6 +8,12 @@
   <script type="application/javascript" src="js/resource/roomResource.js"></script>
   <script type="application/javascript" src="js/service/roomService.js"></script>
   <script type="application/javascript" src="js/controller/roomListController.js"></script>
+  <script type="application/javascript" src="js/controller/roomEditController.js"></script>
+  <style>
+    .invalid input {
+      border-color: red;
+    }
+  </style>
 </head>
 <body ng-controller="roomListController">
 <h1>Room Management</h1>
@@ -23,5 +29,12 @@
     <td>{{room.number}}</td>
   </tr>
 </table>
+<form name="roomEditForm" ng-controller="roomEditController" ng-class="{invalid:(roomEditForm.$dirty && roomEditForm.$invalid)}">
+  <input name="building" type="text" ng-model="room.building" required maxlength="1" minlength="1" pattern="[ABCDEH]">
+  <span ng-show="roomEditForm.building.$dirty && roomEditForm.building.$invalid">Bitte gibt ein gültiges Gebäude an.</span>
+  <input name="number" type="text" ng-model="room.number" required maxlength="3" minlength="3" pattern="[0-9]{3}">
+  <span ng-show="roomEditForm.number.$dirty && roomEditForm.number.$invalid">Bitte gib eine gültige Raumnummer an.</span>
+  <input type="submit" ng-disabled="roomEditForm.$invalid" ng-click="saveRoom()"/>
+</form>
 </body>
 </html>
