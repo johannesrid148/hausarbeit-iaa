@@ -7,8 +7,8 @@ application.controller('roomEditController', [
     $scope.saveRoom = function () {
       roomService.saveRoom($scope.room)
         .then(function (response) {
-          if (response.status === 200) {
-            // refresh room list
+          if (response.status === 204) {
+            $scope.rooms.push($scope.room);
           }
         });
     }
