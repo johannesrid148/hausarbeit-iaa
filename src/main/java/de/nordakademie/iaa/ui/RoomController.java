@@ -26,7 +26,8 @@ public class RoomController {
 
   @POST
   @Consumes(MediaType.APPLICATION_JSON)
-  public void saveRoom(final Room room) {
-    roomService.saveRoom(room);
+  @Produces(MediaType.APPLICATION_JSON)
+  public Room saveRoom(final Room room) {
+    return roomService.saveRoom(room);
   }
 }

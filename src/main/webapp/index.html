@@ -9,26 +9,17 @@
   <script type="application/javascript" src="js/service/roomService.js"></script>
   <script type="application/javascript" src="js/controller/roomListController.js"></script>
   <script type="application/javascript" src="js/controller/roomEditController.js"></script>
+  <script type="application/javascript" src="js/directive/roomListDirective.js"></script>
   <style>
     .invalid input {
       border-color: red;
     }
   </style>
 </head>
-<body ng-controller="roomListController">
+<body>
 <h1>Room Management</h1>
 <h2>Room List</h2>
-<input type="text" ng-model="roomSearchQuery">
-<table>
-  <tr>
-    <th>Building</th>
-    <th>Room Number</th>
-  </tr>
-  <tr ng-repeat="room in rooms | filter:roomSearchQuery">
-    <td>{{room.building}}</td>
-    <td>{{room.number}}</td>
-  </tr>
-</table>
+<room-list></room-list>
 <form name="roomEditForm" ng-controller="roomEditController" ng-class="{invalid:(roomEditForm.$dirty && roomEditForm.$invalid)}">
   <input name="building" type="text" ng-model="room.building" required maxlength="1" minlength="1" pattern="[ABCDEH]">
   <span ng-show="roomEditForm.building.$dirty && roomEditForm.building.$invalid">Bitte gibt ein gültiges Gebäude an.</span>

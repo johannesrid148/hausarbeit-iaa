@@ -12,9 +12,9 @@ public class RoomDAO {
     add(new Room("B", "006"));
   }});
 
-  public boolean create(final Room room) {
+  public Room create(final Room room) {
     rooms.add(room);
-    return true;
+    return room;
   }
 
   public Room read(final int index) {
