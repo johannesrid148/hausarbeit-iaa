@@ -1,32 +1,20 @@
 package de.nordakademie.iaa.model;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Room {
 
   private String building;
   private String number;
-
-  public Room() {
-    // needed for struts
-  }
-
-  Room(final String building, final String number) {
-    this.building = building;
-    this.number = number;
-  }
-
-  public String getBuilding() {
-    return building;
-  }
-
-  public void setBuilding(final String building) {
-    this.building = building;
-  }
-
-  public String getNumber() {
-    return number;
-  }
-
-  public void setNumber(final String number) {
-    this.number = number;
-  }
 }
