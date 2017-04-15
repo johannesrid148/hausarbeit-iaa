@@ -11,6 +11,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
+    <!-- Generate Code with lombok -->
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>annotations</artifactId>
@@ -23,6 +24,7 @@
       <version>1.16.16</version>
       <scope>provided</scope>
     </dependency>
+    <!-- Provide a REST-API with jersey -->
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-servlet</artifactId>
@@ -32,6 +34,23 @@
       <groupId>org.glassfish.jersey.media</groupId>
       <artifactId>jersey-media-json-jackson</artifactId>
       <version>2.25</version>
+    </dependency>
+    <!-- Log with log4j -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-web</artifactId>
+      <version>2.8.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>2.8.2</version>
     </dependency>
   </dependencies>
 </project>
