@@ -1,3 +1,3 @@
 'use strict';
 
-var application = angular.module('roomManagement', []);
+const application = angular.module('roomManagement', []);

@@ -3,9 +3,9 @@
 application.controller('roomListController', [
   '$scope',
   'roomService',
-  function ($scope, roomService) {
+  ($scope, roomService) => {
     roomService.findAll()
-      .then(function (response) {
+      .then(response => {
         $scope.rooms = response.data;
       })
   }

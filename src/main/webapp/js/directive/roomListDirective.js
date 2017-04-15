@@ -1,10 +1,8 @@
 'use strict';
 
-application.directive('roomList', function () {
-  return {
-    restrict: 'E',
-    transclude: false,
-    templateUrl: 'views/roomListView.html',
-    controller: 'roomListController'
-  };
-});
+application.directive('roomList', () => ({
+  restrict: 'E',
+  transclude: false,
+  templateUrl: 'views/roomListView.html',
+  controller: 'roomListController'
+}));

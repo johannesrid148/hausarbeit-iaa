@@ -16,7 +16,7 @@ import de.nordakademie.iaa.service.RoomService;
 @Path("/rooms")
 public class RoomController {
 
-  private final RoomService roomService = Context.roomService;
+  private final RoomService roomService = Context.ROOM_SERVICE;
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
