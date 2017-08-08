@@ -5,6 +5,9 @@ public class Room {
   private String building;
   private String number;
 
+  public Room() {
+  }
+
   public Room(final String building, final String number) {
     this.building = building;
     this.number = number;
