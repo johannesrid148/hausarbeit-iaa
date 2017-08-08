@@ -8,7 +8,7 @@ import de.nordakademie.iaa.service.RoomService;
 
 public class EditRoomAction extends ActionSupport {
 
-  private final RoomService roomService = Context.roomService;
+  private final RoomService roomService = Context.ROOM_SERVICE;
   private Room room;
 
   public String getForm() throws Exception {

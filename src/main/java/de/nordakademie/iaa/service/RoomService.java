@@ -2,11 +2,19 @@ package de.nordakademie.iaa.service;
 
 import java.util.List;
 
+import de.nordakademie.iaa.Context;
 import de.nordakademie.iaa.model.Room;
+import de.nordakademie.iaa.model.RoomRepository;
 
-public interface RoomService {
+public class RoomService {
 
-  List<Room> findAll();
+  private final RoomRepository roomRepository = Context.ROOM_REPOSITORY;
 
-  boolean saveRoom(Room room);
+  public List<Room> findAll() {
+    return roomRepository.readAll();
+  }
+
+  public Room saveRoom(final Room room) {
+    return roomRepository.create(room);
+  }
 }

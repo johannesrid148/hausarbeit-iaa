@@ -10,7 +10,7 @@ import de.nordakademie.iaa.service.RoomService;
 
 public class ListRoomsAction implements Action {
 
-  private final RoomService roomService = Context.roomService;
+  private final RoomService roomService = Context.ROOM_SERVICE;
   private List<Room> rooms;
 
   @Override
