@@ -5,9 +5,6 @@ import static java.util.Collections.synchronizedList;
 import java.util.ArrayList;
 import java.util.List;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class RoomRepository {
 
   private final List<Room> rooms = synchronizedList(new ArrayList<Room>() {{
@@ -25,7 +22,6 @@ public class RoomRepository {
   }
 
   public List<Room> readAll() {
-    LOG.info("Read all rooms");
     return rooms;
   }
 

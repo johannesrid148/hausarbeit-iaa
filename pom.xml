@@ -11,19 +11,6 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
-    <!-- Generate Code with lombok -->
-    <dependency>
-      <groupId>com.google.code.findbugs</groupId>
-      <artifactId>annotations</artifactId>
-      <version>3.0.1</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.16.18</version>
-      <scope>provided</scope>
-    </dependency>
     <!-- Provide a REST-API with jersey -->
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
