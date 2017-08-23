@@ -1,18 +1,37 @@
 package de.nordakademie.iaa.model;
 
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ROOM")
 public class Room {
 
+  private long id;
   private String building;
   private String number;
 
   public Room() {
   }
 
-  public Room(final String building, final String number) {
+  public Room(final long id, final String building, final String number) {
+    this.id = id;
     this.building = building;
     this.number = number;
   }
 
+  @Id
+  public long getId() {
+    return id;
+  }
+
+  public void setId(final long id) {
+    this.id = id;
+  }
+
+  @Basic
   public String getBuilding() {
     return building;
   }
@@ -21,6 +40,7 @@ public class Room {
     this.building = building;
   }
 
+  @Basic
   public String getNumber() {
     return number;
   }
