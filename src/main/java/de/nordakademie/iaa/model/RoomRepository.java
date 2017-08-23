@@ -8,9 +8,9 @@ import java.util.List;
 public class RoomRepository {
 
   private final List<Room> rooms = synchronizedList(new ArrayList<Room>() {{
-      add(new Room("B", "005"));
-      add(new Room("C", "006"));
-    }});
+    add(new Room(1L, "B", "005"));
+    add(new Room(2L, "C", "006"));
+  }});
 
   public Room create(final Room room) {
     rooms.add(room);
