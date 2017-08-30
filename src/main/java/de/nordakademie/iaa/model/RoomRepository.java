@@ -1,31 +1,36 @@
 package de.nordakademie.iaa.model;
 
-import static java.util.Collections.synchronizedList;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+
+import de.nordakademie.iaa.Context;
+
 public class RoomRepository {
 
-  private final List<Room> rooms = synchronizedList(new ArrayList<Room>() {{
-    add(new Room(1L, "B", "005"));
-    add(new Room(2L, "C", "006"));
-  }});
-
   public Room create(final Room room) {
-    rooms.add(room);
+    final EntityManager entityManager = Context.createEntityManager();
+
+    entityManager.getTransaction().begin();
+    entityManager.persist(room);
+    entityManager.getTransaction().commit();
+
+    entityManager.close();
     return room;
   }
 
-  public Room read(final int index) {
-    return rooms.get(index);
-  }
+  public List<Room> findAll() {
+    final EntityManager entityManager = Context.createEntityManager();
 
-  public List<Room> readAll() {
-    return rooms;
-  }
+    entityManager.getTransaction().begin();
+    final List<Room> rooms = entityManager.createQuery("SELECT r FROM Room r", Room.class).getResultList();
+    entityManager.getTransaction().commit();
 
-  public void delete(final int index) {
-    rooms.remove(index);
+    entityManager.close();
+    if (rooms != null) {
+      return rooms;
+    }
+    return new ArrayList<>();
   }
 }

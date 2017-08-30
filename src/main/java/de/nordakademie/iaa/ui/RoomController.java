@@ -28,6 +28,6 @@ public class RoomController {
   @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
   public Room saveRoom(final Room room) {
-    return roomService.saveRoom(room);
+    return roomService.create(room);
   }
 }
