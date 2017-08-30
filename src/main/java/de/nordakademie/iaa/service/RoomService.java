@@ -11,10 +11,10 @@ public class RoomService {
   private final RoomRepository roomRepository = Context.ROOM_REPOSITORY;
 
   public List<Room> findAll() {
-    return roomRepository.readAll();
+    return roomRepository.findAll();
   }
 
-  public Room saveRoom(final Room room) {
-    return roomRepository.create(room);
+  public void create(final Room room) {
+    roomRepository.create(room);
   }
 }

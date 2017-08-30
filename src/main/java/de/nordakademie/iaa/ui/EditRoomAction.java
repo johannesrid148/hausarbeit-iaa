@@ -16,7 +16,7 @@ public class EditRoomAction extends ActionSupport {
   }
 
   public String saveRoom() throws Exception {
-    roomService.saveRoom(room);
+    roomService.create(room);
     return SUCCESS;
   }
 
