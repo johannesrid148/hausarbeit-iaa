@@ -6,7 +6,7 @@ import de.nordakademie.iaa.Context;
 import de.nordakademie.iaa.room.model.Room;
 import de.nordakademie.iaa.room.service.RoomService;
 
-public class EditRoomAction extends ActionSupport {
+public class RoomEditAction extends ActionSupport {
 
   private final RoomService roomService = Context.ROOM_SERVICE;
   private Room room;

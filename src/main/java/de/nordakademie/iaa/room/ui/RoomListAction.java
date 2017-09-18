@@ -8,7 +8,7 @@ import de.nordakademie.iaa.Context;
 import de.nordakademie.iaa.room.model.Room;
 import de.nordakademie.iaa.room.service.RoomService;
 
-public class ListRoomsAction implements Action {
+public class RoomListAction implements Action {
 
   private final RoomService roomService = Context.ROOM_SERVICE;
   private List<Room> rooms;
