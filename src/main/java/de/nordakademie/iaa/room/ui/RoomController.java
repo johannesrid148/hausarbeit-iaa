@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.ui;
+package de.nordakademie.iaa.room.ui;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import de.nordakademie.iaa.Context;
-import de.nordakademie.iaa.model.Room;
-import de.nordakademie.iaa.service.RoomService;
+import de.nordakademie.iaa.room.model.Room;
+import de.nordakademie.iaa.room.service.RoomService;
 
 @Path("/rooms")
 public class RoomController {

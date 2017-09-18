@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.ui;
+package de.nordakademie.iaa;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

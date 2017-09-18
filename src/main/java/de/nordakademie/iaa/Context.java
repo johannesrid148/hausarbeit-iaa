@@ -7,8 +7,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-import de.nordakademie.iaa.model.RoomRepository;
-import de.nordakademie.iaa.service.RoomService;
+import de.nordakademie.iaa.room.model.RoomRepository;
+import de.nordakademie.iaa.room.service.RoomService;
 
 @WebListener
 public class Context implements ServletContextListener {
