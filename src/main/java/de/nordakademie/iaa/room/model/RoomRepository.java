@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.model;
+package de.nordakademie.iaa.room.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,21 +1,21 @@
-package de.nordakademie.iaa.ui;
+package de.nordakademie.iaa.room.ui;
 
 import com.opensymphony.xwork2.ActionSupport;
 
 import de.nordakademie.iaa.Context;
-import de.nordakademie.iaa.model.Room;
-import de.nordakademie.iaa.service.RoomService;
+import de.nordakademie.iaa.room.model.Room;
+import de.nordakademie.iaa.room.service.RoomService;
 
 public class EditRoomAction extends ActionSupport {
 
   private final RoomService roomService = Context.ROOM_SERVICE;
   private Room room;
 
-  public String getForm() throws Exception {
+  public String getForm() {
     return SUCCESS;
   }
 
-  public String saveRoom() throws Exception {
+  public String saveRoom() {
     roomService.create(room);
     return SUCCESS;
   }

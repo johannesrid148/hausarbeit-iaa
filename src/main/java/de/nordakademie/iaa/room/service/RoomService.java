@@ -1,10 +1,10 @@
-package de.nordakademie.iaa.service;
+package de.nordakademie.iaa.room.service;
 
 import java.util.List;
 
 import de.nordakademie.iaa.Context;
-import de.nordakademie.iaa.model.Room;
-import de.nordakademie.iaa.model.RoomRepository;
+import de.nordakademie.iaa.room.model.Room;
+import de.nordakademie.iaa.room.model.RoomRepository;
 
 public class RoomService {
 

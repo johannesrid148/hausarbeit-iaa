@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.model;
+package de.nordakademie.iaa.room.model;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;

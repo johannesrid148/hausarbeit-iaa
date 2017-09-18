@@ -6,18 +6,18 @@
     <result-types>
       <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" default="true"/>
     </result-types>
-    <action name='roomList' class="de.nordakademie.iaa.ui.ListRoomsAction">
+    <action name='listRooms' class="de.nordakademie.iaa.room.ui.ListRoomsAction">
       <result>roomList</result>
     </action>
-    <action name='roomEdit'
-            class="de.nordakademie.iaa.ui.EditRoomAction"
+    <action name='editRoom'
+            class="de.nordakademie.iaa.room.ui.EditRoomAction"
             method="getForm">
       <result>roomEdit</result>
     </action>
     <action name='saveRoom'
-            class="de.nordakademie.iaa.ui.EditRoomAction"
+            class="de.nordakademie.iaa.room.ui.EditRoomAction"
             method="saveRoom">
-      <result type="redirectAction">roomList</result>
+      <result type="redirectAction">listRooms</result>
       <result name="input">roomEdit</result>
     </action>
   </package>
