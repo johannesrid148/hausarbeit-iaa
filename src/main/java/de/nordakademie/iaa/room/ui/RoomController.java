@@ -9,14 +9,22 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import de.nordakademie.iaa.Context;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
 import de.nordakademie.iaa.room.model.Room;
 import de.nordakademie.iaa.room.service.RoomService;
 
 @Path("/rooms")
+@Controller
 public class RoomController {
 
-  private final RoomService roomService = Context.ROOM_SERVICE;
+  private final RoomService roomService;
+
+  @Autowired
+  public RoomController(final RoomService roomService) {
+    this.roomService = roomService;
+  }
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
