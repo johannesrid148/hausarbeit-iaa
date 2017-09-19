@@ -1,6 +1,5 @@
 package de.nordakademie.iaa.room.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -19,11 +18,10 @@ public class RoomRepository {
   }
 
   public List<Room> findAll() {
-    final List<Room> rooms = entityManager.createQuery("SELECT r FROM Room r", Room.class).getResultList();
+    return entityManager.createQuery("SELECT r FROM Room r", Room.class).getResultList();
+  }
 
-    if (rooms != null) {
-      return rooms;
-    }
-    return new ArrayList<>();
+  public Room findOne(final long roomId) {
+    return entityManager.find(Room.class, roomId);
   }
 }
