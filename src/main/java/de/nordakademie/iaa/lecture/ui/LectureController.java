@@ -10,13 +10,11 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 
 import de.nordakademie.iaa.lecture.model.Lecture;
 import de.nordakademie.iaa.lecture.service.LectureService;
 
 @Path("/lectures")
-@Controller
 public class LectureController {
 
   private final LectureService lectureService;
