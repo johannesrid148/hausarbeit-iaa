@@ -3,6 +3,6 @@
 application.directive('lectureList', () => ({
   restrict: 'E',
   transclude: false,
-  templateUrl: 'views/lecture/lectureListView.html',
+  templateUrl: 'view/lecture/lectureListView.html',
   controller: 'lectureListController'
 }));
