@@ -3,6 +3,6 @@
 application.directive('roomList', () => ({
   restrict: 'E',
   transclude: false,
-  templateUrl: 'views/roomListView.html',
+  templateUrl: 'views/room/roomListView.html',
   controller: 'roomListController'
 }));
