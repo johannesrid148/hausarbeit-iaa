@@ -7,6 +7,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+import de.nordakademie.iaa.lecture.model.LectureRepository;
+import de.nordakademie.iaa.lecture.service.LectureService;
 import de.nordakademie.iaa.room.model.RoomRepository;
 import de.nordakademie.iaa.room.service.RoomService;
 
@@ -15,6 +17,9 @@ public class Context implements ServletContextListener {
 
   public static final RoomRepository ROOM_REPOSITORY = new RoomRepository();
   public static final RoomService ROOM_SERVICE = new RoomService();
+
+  public static final LectureRepository LECTURE_REPOSITORY = new LectureRepository();
+  public static final LectureService LECTURE_SERVICE = new LectureService();
 
   private static EntityManagerFactory entityManagerFactory;
 
