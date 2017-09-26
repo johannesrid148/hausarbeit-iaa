@@ -2,19 +2,17 @@ package de.nordakademie.iaa.room.ui;
 
 import java.util.List;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import de.nordakademie.iaa.room.model.Room;
 import de.nordakademie.iaa.room.service.RoomService;
 
-@Path("/rooms")
+@RestController
+@RequestMapping("/rooms")
 public class RoomController {
 
   private final RoomService roomService;
@@ -24,15 +22,12 @@ public class RoomController {
     this.roomService = roomService;
   }
 
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
+  @GetMapping
   public List<Room> findAll() {
     return roomService.findAll();
   }
 
-  @POST
-  @Consumes(MediaType.APPLICATION_JSON)
-  @Produces(MediaType.APPLICATION_JSON)
+  @PostMapping
   public Room saveRoom(final Room room) {
     return roomService.create(room);
   }

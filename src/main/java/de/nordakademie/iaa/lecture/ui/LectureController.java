@@ -2,19 +2,17 @@ package de.nordakademie.iaa.lecture.ui;
 
 import java.util.List;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import de.nordakademie.iaa.lecture.model.Lecture;
 import de.nordakademie.iaa.lecture.service.LectureService;
 
-@Path("/lectures")
+@RestController
+@RequestMapping("/lectures")
 public class LectureController {
 
   private final LectureService lectureService;
@@ -24,15 +22,12 @@ public class LectureController {
     this.lectureService = lectureService;
   }
 
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
+  @GetMapping
   public List<Lecture> findAll() {
     return lectureService.findAll();
   }
 
-  @POST
-  @Consumes(MediaType.APPLICATION_JSON)
-  @Produces(MediaType.APPLICATION_JSON)
+  @PostMapping
   public Lecture saveLecture(final Lecture lecture) {
     return lectureService.create(lecture);
   }
