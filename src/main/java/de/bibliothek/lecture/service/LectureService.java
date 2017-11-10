@@ -1,15 +1,15 @@
-package de.nordakademie.iaa.lecture.service;
+package de.bibliothek.lecture.service;
 
 import java.util.List;
 
+import de.bibliothek.lecture.model.LectureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import de.nordakademie.iaa.lecture.model.Lecture;
-import de.nordakademie.iaa.lecture.model.LectureRepository;
-import de.nordakademie.iaa.room.model.Room;
-import de.nordakademie.iaa.room.model.RoomRepository;
+import de.bibliothek.lecture.model.Lecture;
+import de.bibliothek.publikationen.model.Room;
+import de.bibliothek.publikationen.model.RoomRepository;
 
 @Service
 public class LectureService {

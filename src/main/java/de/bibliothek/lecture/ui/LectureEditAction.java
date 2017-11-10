@@ -1,11 +1,11 @@
-package de.nordakademie.iaa.lecture.ui;
+package de.bibliothek.lecture.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import de.nordakademie.iaa.lecture.model.Lecture;
-import de.nordakademie.iaa.lecture.service.LectureService;
+import de.bibliothek.lecture.model.Lecture;
+import de.bibliothek.lecture.service.LectureService;
 
 public class LectureEditAction extends ActionSupport {
 

@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.room.service;
+package de.bibliothek.publikationen.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import de.nordakademie.iaa.room.model.Room;
-import de.nordakademie.iaa.room.model.RoomRepository;
+import de.bibliothek.publikationen.model.Room;
+import de.bibliothek.publikationen.model.RoomRepository;
 
 @Service
 public class RoomService {

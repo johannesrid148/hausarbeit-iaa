@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.lecture.model;
+package de.bibliothek.lecture.model;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
@@ -8,7 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import de.nordakademie.iaa.room.model.Room;
+import de.bibliothek.publikationen.model.Room;
+
 
 @Entity
 @Table(name = "LECTURE")

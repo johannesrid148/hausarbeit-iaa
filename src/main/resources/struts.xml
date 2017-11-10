@@ -7,31 +7,31 @@
       <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" default="true"/>
     </result-types>
     <!-- room -->
-    <action name='roomList' class="de.nordakademie.iaa.room.ui.RoomListAction">
+    <action name='roomList' class="de.bibliothek.publikationen.ui.RoomListAction">
       <result>roomList</result>
     </action>
     <action name='roomEdit'
-            class="de.nordakademie.iaa.room.ui.RoomEditAction"
+            class="de.bibliothek.publikationen.ui.RoomEditAction"
             method="getForm">
       <result>roomEdit</result>
     </action>
     <action name='saveRoom'
-            class="de.nordakademie.iaa.room.ui.RoomEditAction"
+            class="de.bibliothek.publikationen.ui.RoomEditAction"
             method="saveRoom">
       <result type="redirectAction">roomList</result>
       <result name="input">roomEdit</result>
     </action>
     <!-- lecture -->
-    <action name='lectureList' class="de.nordakademie.iaa.lecture.ui.LectureListAction">
+    <action name='lectureList' class="de.bibliothek.lecture.ui.LectureListAction">
       <result>lectureList</result>
     </action>
     <action name='lectureEdit'
-            class="de.nordakademie.iaa.lecture.ui.LectureEditAction"
+            class="de.bibliothek.lecture.ui.LectureEditAction"
             method="getForm">
       <result>lectureEdit</result>
     </action>
     <action name='saveLecture'
-            class="de.nordakademie.iaa.lecture.ui.LectureEditAction"
+            class="de.bibliothek.lecture.ui.LectureEditAction"
             method="saveLecture">
       <result type="redirectAction">lectureList</result>
       <result name="input">lectureEdit</result>

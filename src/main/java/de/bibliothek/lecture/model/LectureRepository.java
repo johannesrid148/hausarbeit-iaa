@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.lecture.model;
+package de.bibliothek.lecture.model;
 
 import java.util.List;
 

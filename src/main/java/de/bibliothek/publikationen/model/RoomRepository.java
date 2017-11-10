@@ -1,4 +1,4 @@
-package de.nordakademie.iaa.room.model;
+package de.bibliothek.publikationen.model;
 
 import java.util.List;
 

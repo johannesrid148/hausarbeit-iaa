@@ -1,11 +1,11 @@
-package de.nordakademie.iaa.room.ui;
+package de.bibliothek.publikationen.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import de.nordakademie.iaa.room.model.Room;
-import de.nordakademie.iaa.room.service.RoomService;
+import de.bibliothek.publikationen.model.Room;
+import de.bibliothek.publikationen.service.RoomService;
 
 public class RoomEditAction extends ActionSupport {
 

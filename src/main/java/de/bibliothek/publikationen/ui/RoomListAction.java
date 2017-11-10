@@ -1,19 +1,19 @@
-package de.nordakademie.iaa.room.ui;
+package de.bibliothek.publikationen.ui;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import de.bibliothek.publikationen.service.RoomService;
+import de.bibliothek.publikationen.model.Room;
 import com.opensymphony.xwork2.Action;
 
-import de.nordakademie.iaa.room.model.Room;
-import de.nordakademie.iaa.room.service.RoomService;
+
 
 public class RoomListAction implements Action {
 
-  private final RoomService roomService;
+  private final de.bibliothek.publikationen.service.RoomService roomService;
 
-  private List<Room> rooms;
+  private List<de.bibliothek.publikationen.model.Room> rooms;
 
   @Autowired
   public RoomListAction(final RoomService roomService) {
