@@ -33,7 +33,7 @@ public class Publikation {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getNkey() {
         return nkey;
     }

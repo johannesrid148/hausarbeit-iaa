@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Erinnerung")
+@Table(name = "Student")
 public class Student {
 
     private long id;
@@ -25,7 +25,7 @@ public class Student {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }
@@ -54,6 +54,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Erinnerung{" + "id=" + id + ", name='" + name + '\'' + ", vorname='" + vorname + '\'' + '}';
+        return "Student{" + "id=" + id + ", name='" + name + '\'' + ", vorname='" + vorname + '\'' + '}';
     }
 }

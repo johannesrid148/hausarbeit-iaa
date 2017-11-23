@@ -3,7 +3,7 @@ package de.nordakademie.iaa.schlagwort.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Erinnerung")
+@Table(name = "Schlagwort")
 public class Schlagwort {
 
     private long id;
@@ -18,7 +18,7 @@ public class Schlagwort {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }
@@ -38,6 +38,6 @@ public class Schlagwort {
 
     @Override
     public String toString() {
-        return "Erinnerung{" + "id=" + id + ", name='" + name + '\'' + '}';
+        return "Schlagwort{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }

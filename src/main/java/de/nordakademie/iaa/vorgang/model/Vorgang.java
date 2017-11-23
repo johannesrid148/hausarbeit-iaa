@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Erinnerung")
+@Table(name = "Vorgang")
 public class Vorgang {
 
     private long id;
@@ -49,6 +49,6 @@ public class Vorgang {
 
     @Override
     public String toString() {
-        return "Erinnerung{" + "id=" + id + ", datumAusgabe='" + datumAusgabe + '\'' + ", datumRückgabe='" + datumRückgabe + '}';
+        return "Vorgang{" + "id=" + id + ", datumAusgabe='" + datumAusgabe + '\'' + ", datumRückgabe='" + datumRückgabe + '}';
     }
 }

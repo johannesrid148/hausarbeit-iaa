@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Erinnerung")
+@Table(name = "Art")
 public class Art {
 
     private long id;
@@ -19,7 +19,7 @@ public class Art {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }
@@ -39,6 +39,6 @@ public class Art {
 
     @Override
     public String toString() {
-        return "Erinnerung{" + "id=" + id + ", name='" + name + '\'' + ", datumRückgabe='" + '}';
+        return "Art{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }
