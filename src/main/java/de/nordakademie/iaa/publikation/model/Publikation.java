@@ -1,11 +1,6 @@
 package de.nordakademie.iaa.publikation.model;
 
-import javax.persistence.Basic;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -18,17 +13,19 @@ public class Publikation {
     private String titel;
     private String autor;
     private Date verDatum;
+    private long artId;
 
 
     public Publikation() {
     }
 
-    public Publikation(final long nkey, final short bestand, Date verDatum, final String autor, final String isbn, final String titel) {
+    public Publikation(final long nkey, final long artId, final short bestand, final Date verDatum, final String autor, final String isbn, final String titel) {
         this.nkey = nkey;
         this.bestand = bestand;
         this.isbn = isbn;
         this.autor = autor;
         this.titel = titel;
+        this.artId = artId;
         this.verDatum = verDatum;
     }
 
@@ -40,6 +37,15 @@ public class Publikation {
 
     public void setNkey(final long nkey) {
         this.nkey = nkey;
+    }
+
+    @ManyToOne
+    public long getArtId() {
+        return artId;
+    }
+
+    public void setArtId(long artId) {
+        this.artId = artId;
     }
 
     @Basic
@@ -89,6 +95,6 @@ public class Publikation {
 
     @Override
     public String toString() {
-        return "Publikation{" + "nkey=" + nkey + ", isbn='" + isbn + '\'' + ", titel='" + titel + '\'' + ", autor='" + autor + '\'' + ", datum='" + verDatum + '\'' + '}';
+        return "Publikation{" + "nkey=" + nkey + ", isbn='" + isbn + '\'' + ", titel='" + titel + '\'' + ", autor='" + autor + '\'' + ", datum='" + verDatum + '\'' + ", artId='" + artId + '}';
     }
 }
