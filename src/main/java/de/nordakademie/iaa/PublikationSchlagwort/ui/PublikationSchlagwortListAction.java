@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class PublikationListAction implements Action {
+public class PublikationSchlagwortListAction implements Action {
 
     private final PublikationSchlagwortService publikationService;
 
     private List<PublikationSchlagwort> publikations;
 
     @Autowired
-    public PublikationListAction(final PublikationSchlagwortService publikationService) {
+    public PublikationSchlagwortListAction(final PublikationSchlagwortService publikationService) {
         this.publikationService = publikationService;
     }
 
