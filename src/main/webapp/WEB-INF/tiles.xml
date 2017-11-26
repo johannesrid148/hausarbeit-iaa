@@ -19,4 +19,11 @@
   <definition name="publikationEdit" extends="pageFrame">
     <put-attribute name="content" value="/templates/publikation/publikationEdit.jsp"/>
   </definition>
+  <!-- mahnung -->
+  <definition name="mahnungList" extends="pageFrame">
+    <put-attribute name="content" value="/templates/mahnung/mahnungList.jsp"/>
+  </definition>
+  <definition name="mahnungEdit" extends="pageFrame">
+    <put-attribute name="content" value="/templates/mahnung/mahnungEdit.jsp"/>
+  </definition>
 </tiles-definitions>

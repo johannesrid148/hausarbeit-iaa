@@ -2,12 +2,13 @@
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <table>
   <tr>
-    <th>Id</th>
-    <th>Title</th>
-    <th>RoomBuilding</th>
-    <th>RoomNumber</th>
+    <th>Mahnstufe</th>
+    <th>Matrikelnummer</th>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>Publikation</th>
   </tr>
-  <s:iterator value="lectures">
+  <s:iterator value="erinnerungs">
     <tr>
       <td><s:property value="id"/></td>
       <td><s:property value="title"/></td>

@@ -1,0 +1,22 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+  "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+  <field name="room.building">
+    <field-validator type="requiredstring">
+      <message>Room building must be set.</message>
+    </field-validator>
+    <field-validator type="regex">
+      <param name="regex"><![CDATA[([ABCDEH])]]></param>
+      <message>Room building must be on NAK campus.</message>
+    </field-validator>
+  </field>
+  <field name="room.number">
+    <field-validator type="requiredstring">
+      <message>Room number must be set.</message>
+    </field-validator>
+    <field-validator type="regex">
+      <param name="regex"><![CDATA[([0-9]{3})]]></param>
+      <message>Room number must be 3 digits long.</message>
+    </field-validator>
+  </field>
+</validators>

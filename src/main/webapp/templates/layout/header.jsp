@@ -4,12 +4,12 @@
 <table>
     <tr>
         <th>
-            <s:form action="savePublikation">
+            <s:form action="header.jsp">
             <s:submit value="Startseite"/>
         </s:form>
         </th>
         <th>
-            <s:form action="savePublikation">
+            <s:form action="response.sendRedirect('header.jsp');">
             <s:submit value="Neue Ausleihe"/>
         </s:form>
         </th>
@@ -29,27 +29,9 @@
         </s:form>
         </th>
         <th>
-            <s:form action="savePublikation">
-            <s:submit value="Neuer Student"/>
+            <s:form action="publikationEdit">
+            <s:submit value="Neue Publikation"/>
         </s:form>
         </th>
     </tr>
-    <tr>
-        <th>Mahnstufe</th>
-        <th>Matrikelnummer</th>
-        <th>Vorname</th>
-        <th>Nachname</th>
-        <th>Publikation</th>
-        <th>Verlust</th>
-    </tr>
-    <s:iterator value="mahnung">
-        <tr>
-            <td><s:property value="nkey"/></td>
-            <td><s:property value="titel"/></td>
-            <td><s:property value="autor"/></td>
-            <td><s:property value="verDatum"/></td>
-            <td><s:property value="verlag"/></td>
-            <td><s:property value="art.name"/></td>
-        </tr>
-    </s:iterator>
 </table>
