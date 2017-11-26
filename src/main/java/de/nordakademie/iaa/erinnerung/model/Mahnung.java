@@ -4,18 +4,18 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "Erinnerung")
-public class Erinnerung {
+@Table(name = "Mahnung")
+public class Mahnung {
 
     private long id;
     private Date erDate;
     private short erNummer;
     private long mahnID;
 
-    public Erinnerung() {
+    public Mahnung() {
     }
 
-    public Erinnerung(final long id, final String name) {
+    public Mahnung(final long id, final String name) {
         this.id = id;
         this.erDate = erDate;
     }

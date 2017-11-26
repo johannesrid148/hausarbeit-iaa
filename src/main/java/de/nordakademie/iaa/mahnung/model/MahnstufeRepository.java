@@ -8,20 +8,20 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MahnungRepository {
+public class MahnstufeRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    public void create(final Mahnung mahnung) {
+    public void create(final Mahnstufe mahnung) {
         entityManager.persist(mahnung);
     }
 
-    public List<Mahnung> findAll() {
-        return entityManager.createQuery("SELECT r FROM Mahnung r", Mahnung.class).getResultList();
+    public List<Mahnstufe> findAll() {
+        return entityManager.createQuery("SELECT r FROM Mahnstufe r", Mahnstufe.class).getResultList();
     }
 
-    public Mahnung findOne(final long mahnungId) {
-        return entityManager.find(Mahnung.class, mahnungId);
+    public Mahnstufe findOne(final long mahnungId) {
+        return entityManager.find(Mahnstufe.class, mahnungId);
     }
 }

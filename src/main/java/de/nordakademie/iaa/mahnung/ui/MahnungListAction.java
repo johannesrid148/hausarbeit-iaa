@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.opensymphony.xwork2.Action;
 
-import de.nordakademie.iaa.mahnung.model.Mahnung;
-import de.nordakademie.iaa.mahnung.service.MahnungService;
+import de.nordakademie.iaa.mahnung.model.Mahnstufe;
+import de.nordakademie.iaa.mahnung.service.MahnstufeService;
 
 public class MahnungListAction implements Action {
 
-    private final MahnungService mahnungService;
+    private final MahnstufeService mahnungService;
 
-    private List<Mahnung> mahnungs;
+    private List<Mahnstufe> mahnungs;
 
     @Autowired
-    public MahnungListAction(final MahnungService mahnungService) {
+    public MahnungListAction(final MahnstufeService mahnungService) {
         this.mahnungService = mahnungService;
     }
 
@@ -26,7 +26,7 @@ public class MahnungListAction implements Action {
         return SUCCESS;
     }
 
-    public List<Mahnung> getMahnungs() {
+    public List<Mahnstufe> getMahnungs() {
         return mahnungs;
     }
 }

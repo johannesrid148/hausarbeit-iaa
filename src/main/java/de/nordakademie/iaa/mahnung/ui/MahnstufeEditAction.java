@@ -4,17 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import de.nordakademie.iaa.mahnung.model.Mahnung;
-import de.nordakademie.iaa.mahnung.service.MahnungService;
+import de.nordakademie.iaa.mahnung.model.Mahnstufe;
+import de.nordakademie.iaa.mahnung.service.MahnstufeService;
 
-public class MahnungEditAction extends ActionSupport {
+public class MahnstufeEditAction extends ActionSupport {
 
-    private final MahnungService mahnungService;
+    private final MahnstufeService mahnungService;
 
-    private Mahnung mahnung;
+    private Mahnstufe mahnung;
 
     @Autowired
-    public MahnungEditAction(final MahnungService mahnungService) {
+    public MahnstufeEditAction(final MahnstufeService mahnungService) {
         this.mahnungService = mahnungService;
     }
 
@@ -32,11 +32,11 @@ public class MahnungEditAction extends ActionSupport {
         // more complicated validations go here!
     }
 
-    public Mahnung getMahnung() {
+    public Mahnstufe getMahnung() {
         return mahnung;
     }
 
-    public void setMahnung(final Mahnung mahnung) {
+    public void setMahnung(final Mahnstufe mahnung) {
         this.mahnung = mahnung;
     }
 }

@@ -1,13 +1,12 @@
-package de.nordakademie.iaa.mahnung.service;
+package de.nordakademie.iaa.erinnerung.service;
 
-import java.util.List;
-
+import de.nordakademie.iaa.erinnerung.model.Mahnung;
+import de.nordakademie.iaa.erinnerung.model.MahnungRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import de.nordakademie.iaa.mahnung.model.Mahnung;
-import de.nordakademie.iaa.mahnung.model.MahnungRepository;
+import java.util.List;
 
 @Service
 public class MahnungService {

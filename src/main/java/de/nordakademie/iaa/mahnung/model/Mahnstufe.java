@@ -9,18 +9,18 @@ import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name = "Mahnung")
-public class Mahnung {
+@Table(name = "Mahnstufe")
+public class Mahnstufe {
 
     private long id;
     private long mahnstufe;
     private Date rückgabedatum;
 
 
-    public Mahnung() {
+    public Mahnstufe() {
     }
 
-    public Mahnung(final long id, final long mahnstufe, final String rückgabedatum) {
+    public Mahnstufe(final long id, final long mahnstufe, final String rückgabedatum) {
         this.id = id;
         this.mahnstufe = mahnstufe;
 
@@ -48,6 +48,6 @@ public class Mahnung {
 
     @Override
     public String toString() {
-        return "Mahnung{" + "id=" + id + ", mahnstufe='" + mahnstufe + '\'' + ", rückgabedatum='" + rückgabedatum + '\'' + '}';
+        return "Mahnstufe{" + "id=" + id + ", mahnstufe='" + mahnstufe + '\'' + ", rückgabedatum='" + rückgabedatum + '\'' + '}';
     }
 }
