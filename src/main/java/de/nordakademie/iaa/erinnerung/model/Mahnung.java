@@ -40,11 +40,11 @@ public class Mahnung {
         this.nkey = nkey;
     }
 
-    public long getmMtrikelnummer() {
+    public long getMatrikelnummer() {
         return matrikelnummer;
     }
 
-    public void setmatrikelnummer(long matrikelnummer) {
+    public void setMatrikelnummer(long matrikelnummer) {
         this.matrikelnummer = matrikelnummer;
     }
 
