@@ -5,18 +5,18 @@
   <definition name="pageFrame" template="/templates/layout/pageFrame.jsp">
     <put-attribute name="header" value="/templates/layout/header.jsp"/>
   </definition>
-  <!-- room -->
-  <definition name="roomList" extends="pageFrame">
-    <put-attribute name="content" value="/templates/room/roomList.jsp"/>
+  <!-- vorgang -->
+  <definition name="vorgangList" extends="pageFrame">
+    <put-attribute name="content" value="/templates/vorgang/vorgangList.jsp"/>
   </definition>
-  <definition name="roomEdit" extends="pageFrame">
-    <put-attribute name="content" value="/templates/room/roomEdit.jsp"/>
+  <definition name="vorgangEdit" extends="pageFrame">
+    <put-attribute name="content" value="/templates/vorgang/vorgangEdit.jsp"/>
   </definition>
-  <!-- lecture -->
-  <definition name="lectureList" extends="pageFrame">
-    <put-attribute name="content" value="/templates/lecture/lectureList.jsp"/>
+  <!-- publikation -->
+  <definition name="publikationList" extends="pageFrame">
+    <put-attribute name="content" value="/templates/publikation/publikationList.jsp"/>
   </definition>
-  <definition name="lectureEdit" extends="pageFrame">
-    <put-attribute name="content" value="/templates/lecture/lectureEdit.jsp"/>
+  <definition name="publikationEdit" extends="pageFrame">
+    <put-attribute name="content" value="/templates/publikation/publikationEdit.jsp"/>
   </definition>
 </tiles-definitions>

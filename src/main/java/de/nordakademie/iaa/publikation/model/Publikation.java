@@ -39,7 +39,7 @@ public class Publikation {
         this.nkey = nkey;
     }
 
-    @ManyToOne
+ //   @ManyToOne
     public long getArtId() {
         return artId;
     }

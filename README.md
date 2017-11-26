@@ -1,5 +1,5 @@
-# iaa-lecture
+# Hausarbeit-iaa
 
-> "Make it happen." - Benedikt Stemmildt
+> "Lache über niemanden der einen Schritt zurück macht, er könnte Anlauf nehmen"
 
 ...
