@@ -10,27 +10,22 @@
         </th>
         <th>
             <s:form action="response.sendRedirect('header.jsp');">
-            <s:submit value="Neue Ausleihe"/>
+            <s:submit value="Vorgänge"/>
         </s:form>
         </th>
         <th>
             <s:form action="savePublikation">
-            <s:submit value="Verlängerung"/>
+            <s:submit value="Stammdaten pflegen"/>
         </s:form>
         </th>
         <th>
-            <s:form action="savePublikation">
-            <s:submit value="Neue Art"/>
-        </s:form>
-        </th>
-        <th>
-            <s:form action="savePublikation">
-            <s:submit value="Neues Schlagwort"/>
+            <s:form action="publikationList">
+            <s:submit value="Publikation suchen"/>
         </s:form>
         </th>
         <th>
             <s:form action="publikationEdit">
-            <s:submit value="Neue Publikation"/>
+            <s:submit value="Neue Publikation anlegen"/>
         </s:form>
         </th>
     </tr>
