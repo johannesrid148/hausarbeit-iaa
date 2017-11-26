@@ -26,4 +26,8 @@
   <definition name="mahnungEdit" extends="pageFrame">
     <put-attribute name="content" value="/templates/mahnung/mahnungEdit.jsp"/>
   </definition>
+  <!-- einstellungen -->
+  <definition name="einstellungEdit" extends="pageFrame">
+    <put-attribute name="content" value="/templates/Einstellungen/einstellungEdit.jsp"/>
+  </definition>
 </tiles-definitions>

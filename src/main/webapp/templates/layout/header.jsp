@@ -4,12 +4,12 @@
 <table>
     <tr>
         <th>
-            <s:form action="header.jsp">
+            <s:form action="header">
             <s:submit value="Startseite"/>
         </s:form>
         </th>
         <th>
-            <s:form action="response.sendRedirect('header.jsp');">
+            <s:form action="">
             <s:submit value="Vorgänge"/>
         </s:form>
         </th>
@@ -17,6 +17,11 @@
             <s:form action="savePublikation">
             <s:submit value="Stammdaten pflegen"/>
         </s:form>
+        </th>
+        <th>
+            <s:form action="einstellungEdit">
+                <s:submit value="Einstellungen ändern"/>
+            </s:form>
         </th>
         <th>
             <s:form action="publikationList">

@@ -10,6 +10,7 @@ public class Vorgang {
     private long id;
     private Date datumAusgabe;
     private Date datumRückgabe;
+    private long matrikelnummer;
 
     public Vorgang() {
     }

@@ -8,16 +8,18 @@ import java.util.Date;
 public class Mahnung {
 
     private long id;
-    private Date erDate;
-    private short erNummer;
+    private long nkey;
+    private long matrikelnummer;
     private long mahnID;
 
     public Mahnung() {
     }
 
-    public Mahnung(final long id, final String name) {
+    public Mahnung(final long id, final long nkey, final long matrikelnummer, final long mahnID) {
         this.id = id;
-        this.erDate = erDate;
+        this.nkey = nkey;
+        this.matrikelnummer = matrikelnummer;
+        this.mahnID = mahnID;
     }
 
     @Id
@@ -30,20 +32,20 @@ public class Mahnung {
         this.id = id;
     }
 
-    public Date getName() {
-        return erDate;
+    public long getNkey() {
+        return nkey;
     }
 
-    public void setName(Date name) {
-        this.erDate = erDate;
+    public void setNkey (long nkey) {
+        this.nkey = nkey;
     }
 
-    public short getErNummer() {
-        return erNummer;
+    public long getmMtrikelnummer() {
+        return matrikelnummer;
     }
 
-    public void setErNummer(short erNummer) {
-        this.erNummer = erNummer;
+    public void setmatrikelnummer(long matrikelnummer) {
+        this.matrikelnummer = matrikelnummer;
     }
 
     public long getMahnID() {
@@ -57,6 +59,6 @@ public class Mahnung {
 
     @Override
     public String toString() {
-        return "Erinnerung{" + "id=" + id + ", datum='" + erDate + '\'' + ", datumRückgabe='" + '}';
+        return "Mahnung{" + "id=" + id + ", nkey='" + nkey + '\'' +  ", mahnID='" + mahnID + '\'' +", matrikelnummer='" + matrikelnummer+ '}';
     }
 }

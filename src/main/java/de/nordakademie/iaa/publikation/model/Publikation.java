@@ -12,6 +12,7 @@ public class Publikation {
     private String isbn;
     private String titel;
     private String autor;
+    private String verlag;
     private Date verDatum;
     private long artId;
 
@@ -19,7 +20,7 @@ public class Publikation {
     public Publikation() {
     }
 
-    public Publikation(final long nkey, final long artId, final short bestand, final Date verDatum, final String autor, final String isbn, final String titel) {
+    public Publikation(final long nkey, final long artId, final short bestand, final Date verDatum, final String autor, final String isbn, final String titel, final String verlag) {
         this.nkey = nkey;
         this.bestand = bestand;
         this.isbn = isbn;
@@ -27,6 +28,7 @@ public class Publikation {
         this.titel = titel;
         this.artId = artId;
         this.verDatum = verDatum;
+        this.verlag = verlag;
     }
 
     @Id
@@ -93,8 +95,17 @@ public class Publikation {
         this.titel = titel;
     }
 
+    @Basic
+    public String getVerlag() {
+        return verlag;
+    }
+
+    public void setVerlag(final String verlag) {
+        this.verlag = verlag;
+    }
+
     @Override
     public String toString() {
-        return "Publikation{" + "nkey=" + nkey + ", isbn='" + isbn + '\'' + ", titel='" + titel + '\'' + ", autor='" + autor + '\'' + ", datum='" + verDatum + '\'' + ", artId='" + artId + '}';
+        return "Publikation{" + "nkey=" + nkey + ", isbn='" + isbn + '\'' + ", verlag='" + verlag + '\'' + ", titel='" + titel + '\'' + ", autor='" + autor + '\'' + ", datum='" + verDatum + '\'' + ", artId='" + artId + '}';
     }
 }

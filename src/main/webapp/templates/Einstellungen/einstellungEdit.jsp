@@ -16,3 +16,13 @@
     </tr>
   </s:iterator>
 </table>
+<table>
+  <tr>
+    <th>Verleihperiode in Tagen</th>
+  </tr>
+  <s:iterator value="einstellungen">
+    <tr>
+      <td><s:property value="verleihperiode"/></td>
+    </tr>
+  </s:iterator>
+</table>
