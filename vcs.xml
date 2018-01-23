@@ -14,8 +14,12 @@
           <option name="url" value="https://github.com/johannesrid148/hausarbeit-iaa-januar2018" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/johannesrid148/hausarbeit-iaa-januar2018.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\Schumann\Documents\UNI\IAA\iaa-jan" />
+    <option name="cloneParentDir" value="C:\Users\Schumann\Documents\UNI\IAA\iaa-jan2" />
   </component>
 </application>
